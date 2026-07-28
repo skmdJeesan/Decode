@@ -1,0 +1,30 @@
+Q: What is the output of this program? 
+- code:
+    void main(){
+      int a=4;
+      int b=5;
+      a++;b--;
+      cout<<++a<<” “<<b–-;
+    }
+
+  explaination:
+  a++: first use a, then increment a
+  ++a: first increment then use
+
+  output: 6 4 
+
+Q: How much space does following data types take ?
+ans: 
+  int = 4 bytes
+  float = 4 bytes
+  bool = 1 byte
+
+Q: How many of these can be a variable name?
+ans:
+  01PWskills: Invalid, because a variable name cannot start with a digit.
+  _FLOAT: valid, variable can start with underscore
+  int: int is a keyword in cpp, so it's invalid
+  FLOAT: valid, as cpp is case sensitive so float is a keyword but FLOAT or Float are not
+  You will succeed: Invalid, because identifiers cannot contain spaces.
+
+  so FLOAT and _FLOAT this 2 can be variable name oters are not

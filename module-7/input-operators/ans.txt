@@ -1,0 +1,55 @@
+1. Find the output for this code. Let input:- 2 3 6
+code:
+  #include <iostream>
+  using namespace std;
+  int main() {
+    int x;
+    cout << "Enter first number\n";
+    cin >> x; // user will give ‘x’ a value.
+    int y, m;
+    cout << "Enter second number and value for taking modulus\n";
+    cin >> y >> m; // user will give ‘y’ a value.
+    int Z = (x * y) % m;
+    cout << "Output is: " << Z;
+  }
+output: Output is: 0 (considering x = 2, y = 3 & m = 6)
+
+2. Find the output for this code. Let input:- 3 2
+code:
+  #include <iostream>
+  using namespace std;
+  int main(){
+    int x;
+    cout<<"Enter first number\n";
+    cin>>x; // user will give 'x' a value.
+    int y;
+    cout<<"Enter second number\n";
+    cin>>y; // user will give 'y' a value.
+    cout<<(x!=y)<<" "<<(x>=y);
+  }
+output: 1 1 (considering x = 3 & y = 2)
+
+3. Find the output for this code. Let input:- 2 3
+code:
+  #include <iostream>
+  using namespace std;
+  int main(){
+    int x,y;
+    cin>>x>>y;
+    x+=y;
+    x-=y;
+    x%=y;
+    cout<<x;
+  }
+output: 2 (2%3 = 2)
+
+4. Find the output of the below code
+code:
+  #include <iostream>
+  using namespace std;
+  int main(){
+    int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+    cout<<i;
+  }
+output: 49
+explanation: * and / have higher precedence then + or -
