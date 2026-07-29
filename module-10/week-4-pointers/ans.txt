@@ -1,0 +1,45 @@
+Q2: int *p, q;
+options:
+  (a) p is a pointer and q is an integer.
+  (b) p and q both are pointers.
+  (c) p and q both are integers.
+  (d) Syntax is incorrect.
+ans: (a) p is a pointer and q is an integer.
+Explanation: the * modifier applies to the specific variable it is placed next to, not the entire data type. To make both pointers, it would need to be int *p, *q;
+
+Q3: Find the output of the following code snippet.
+code:
+  int a = 10, b = 20;
+  int *ptr = &a;
+  b = *ptr + 1;
+  ptr = &b;
+  cout << *ptr << ‘ ‘ << a << ‘ ‘ << b;
+options:
+  (a) 11 11 10
+  (b) 10 10 10
+  (c) 11 10 11
+  (d) 10 11 10
+ans: (c) 11 10 11
+Explanation: ptr initially points to a (10). b becomes *ptr + 1, so b = 10 + 1 = 11. Then, ptr is updated to point to b. When printing, *ptr is 11, a is 10, and b is 11.
+
+Q4: Find the output of the following code snippet.
+code:
+  int a = 15, b = 20;
+  int *ptr = &a;
+  int *ptr2 = &b;
+  *ptr = *ptr2;
+options:
+  (a) ptr now points to b
+  (b) ptr2 now points to a
+  (c) a gets value of b
+  (d) b gets value of a
+ans: (c) a gets value of b
+Explanation: *ptr = *ptr2; takes the value at the address ptr2 is pointing to (which is b, 20) and assigns it to the address ptr is pointing to (which is a). The pointers themselves don't change where they point, only the values at those memory addresses do.
+
+Q5: Is the following program snippet correct?
+code:
+  int a = 10, b = 20;
+  int *ptr;
+  *ptr = 5;
+ans: incorrect
+Explanation: int *ptr; declares a pointer but does not initialize it to point to a valid memory location. Doing *ptr = 5; attempts to write the value 5 into a random, unallocated memory address.
