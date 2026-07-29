@@ -1,0 +1,54 @@
+Predict the output
+
+1. code:
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  while ('1' < '2')
+    cout << "In while loop" << endl;
+}
+output: The program enters an infinite loop and continuously prints: In while loop
+
+2. code:
+#include <bits/stdc++.h>
+using namespace std;
+int main( ) {
+  int t = 10;
+  while (t /= 2) {
+    cout << "Hello" << endl;
+  }
+}
+output: t /= 2 => t = t/2 so, t = 5, 2, 1, 0(break)
+Hello
+Hello
+Hello
+
+3. code:
+#include <bits/stdc++.h>
+using namespace std;
+int main( ) {
+  for (int x = 1; x * x <= 10; x++)
+    cout << "In for loop" << endl;
+}
+output: at x = 4 it will break
+In for loop
+In for loop
+In for loop
+
+4. code:
+#include <bits/stdc++.h>
+using namespace std;
+int main( ) {
+  int x = 10, y = 0 ;
+  while ( x >= y ) {
+    x-- ;
+    y++ ;
+    cout << x << " " << y << endl ;
+  }
+}
+output:
+9 1
+8 2
+7 3
+6 4
+5 5
