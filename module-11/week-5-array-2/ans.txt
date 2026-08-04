@@ -1,0 +1,15 @@
+Q: Find the error.
+
+code:
+  double getAverage(int arr[], int size);
+  int main () {
+    int balance[5] = {1000, 2, 3, 17, 50};
+    double avg;
+    avg = getAverage( balance[0], 5 ) ;
+    cout << "Average value is: " << avg << endl;
+    return 0;
+  }
+
+ans: 
+  getAverage(arr[], size), the function accept parameters only a array and a int
+  but we are sending balance[0] which is int but the function expect balance[]

@@ -1,0 +1,17 @@
+Q: Predict the output.
+
+code: 
+  int main() {
+    int sub[50], i ;
+    for ( i = 0 ; i <= 48 ; i++ ) ;
+    {
+    sub[i] = i ;
+    cout<<sub[i]<<endl ;
+    }
+    return 0;
+  }
+
+output: 49
+explaination: 
+  the for loop just increments i from 0 to 49 and end
+  then we just put sub[i] = i which is sub[49] = 49
