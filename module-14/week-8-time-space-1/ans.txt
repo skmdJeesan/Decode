@@ -1,0 +1,52 @@
+Q: Calculate the time complexity for the following code snippet.
+1. code - 
+    int c = 0;
+    for(int i = n; i > 0; i /= 2) {
+        c++;
+    }
+    
+time = O(log(n))
+
+2. code -
+    int c = 0;
+    for(int i = n; i > 1; i /= i) {
+        c++;
+    }
+
+time = O(1)
+explaination - let's n = 10 so i start with 10 after 1 iteration i becomes 10/10 which is 1 and loop breaks. 
+so overall whatever value of n the loop will run nly once
+
+3. code -
+    int c = 0;
+    for(int i = 0; i < n; i += k) {
+        c++;
+    }
+
+time = O(n/k)
+
+4. code -
+    int c = 0;
+    for(int i = 1; i < n; i *= 2) {
+        c++;
+    }
+
+time = O(log(n))
+
+5. code -
+    int c = 0;
+    for(int i = 0; i < n; i++) {
+        c += i;
+    }
+
+time = O(n)
+
+6. code -
+    int c = 0;
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < i; j++){
+            c++;
+        }
+    }
+    
+time = O(n*n)
