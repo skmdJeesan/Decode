@@ -1,0 +1,18 @@
+1: Which of the following(s) is/are true about bubble sort:
+options:
+    (a) It is stable sort. (✔)
+    (b) It has a worst case space complexity of O(n).
+    (c) It involves swapping of adjacent elements. (✔)
+    (d) After each iteration, the greatest element is placed at the end of the array. (✔)
+answer: a, c, d
+(b) is false worst case space complexity of buble sort is O(1)
+
+2: What will the following array look like after one iteration of bubble sort [1,6,2,5,4,3].
+answer: [1, 2, 5, 4, 3, 6]
+
+3: In which case does bubble sort works in the most efficient way:
+options:
+    (a) When the array is sorted in increasing order (✔)
+    (b) When the array is sorted partially
+    (c) When the array is sorted in decreasing order.
+    (d) When the array is nearly sorted.
